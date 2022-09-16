@@ -1,5 +1,5 @@
 import { binding, given, then, when } from "cucumber-tsflow";
-import FormData from "form-data";
+import { setDefaultTimeout } from "@cucumber/cucumber";
 import { wikiHelper } from "../utils/wikiHelper";
 import { expect } from "chai";
 import {
@@ -7,7 +7,7 @@ import {
   setjpdisambiguationDataData,
   IData,
 } from "../utils/data";
-
+setDefaultTimeout(60 * 1000);
 @binding()
 export class BankAccountSteps {
   private accountBalance: number = 0;
