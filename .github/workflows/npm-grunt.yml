@@ -28,4 +28,8 @@ jobs:
     - name: Test
       run: |
         npm run test
-        
+    - name: Upload report
+      uses: actions/upload-artifact@v2
+      with:
+        name: cucumber report
+        path: test/reports
