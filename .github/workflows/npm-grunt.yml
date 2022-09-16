@@ -26,9 +26,16 @@ jobs:
         run: |
           npm install
       - name: Test
+        id: test-app
         run: |
           npm run test-api
       - name: Upload report
+        uses: actions/upload-artifact@v2
+        with:
+          name: cucumber report
+          path: test/reports
+      - name: action-slack
+        if: failure() && steps.test-app.outcome != 'success'
         uses: actions/upload-artifact@v2
         with:
           name: cucumber report
