@@ -25,12 +25,10 @@ jobs:
       - name: Build
         run: |
           npm install
-        working-directory: client
       - name: Test
         id: test-app
         run: |
           npm run test-api
-        working-directory: client
 
       - name: Upload report
         uses: actions/upload-artifact@v2
@@ -42,4 +40,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: cucumber report
-          path: client/reports
+          path: /home/runner/work/test/reports
