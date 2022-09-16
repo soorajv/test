@@ -1,0 +1,55 @@
+{
+  "cookies": [
+    {
+      "name": "ss0-testwikiSession",
+      "value": "4joumgl2bn0hisih6i1pmae58c1b6i3c",
+      "domain": "test.wikipedia.org",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "testwikiSession",
+      "value": "4joumgl2bn0hisih6i1pmae58c1b6i3c",
+      "domain": "test.wikipedia.org",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "WMF-Last-Access",
+      "value": "14-Sep-2022",
+      "domain": "test.wikipedia.org",
+      "path": "/",
+      "expires": 1665921600,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "WMF-Last-Access-Global",
+      "value": "14-Sep-2022",
+      "domain": ".wikipedia.org",
+      "path": "/",
+      "expires": 1665921600,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "GeoIP",
+      "value": "GB:ENG:Aylesbury:51.82:-0.81:v4",
+      "domain": ".wikipedia.org",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

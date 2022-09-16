@@ -1,0 +1,314 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "bank-account;stores-money",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Stores money",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 548667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "A bank account with starting balance of $100",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 967420
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "$100 is deposited",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3533163896
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The bank account balance should be 200",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1745737,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -4\n    +6\n\n    at BankAccountSteps.accountBalanceShouldEqual (/Users/soorajvijayan/work/ambily/techtest/src/step-definitions/bank-account.steps.ts:77:15)\n    at World.bindingFunc (/Users/soorajvijayan/work/ambily/techtest/node_modules/cucumber-tsflow/src/binding-decorator.ts:181:22)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 107883
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "bank-account",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Bank Account",
+    "tags": [],
+    "uri": "src/features/bank-account.feature"
+  },
+  {
+    "description": "  As a user I wants to plan my journey in London",
+    "elements": [
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-the-request-to-get-journey-information-working-fine",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify the request to get journey information working fine",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 92299
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81440584
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I can see the status code is 300",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1333503
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18520
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-the-request-to-get-journey-information-working-fine-2",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify the request to get journey information working fine 2",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 78584
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "tomorrow",
+                      "0400"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 320541157
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I can see the valid response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 770913
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17030
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-request-to-the-get-journey-information-of-invalid-time-works-as-expected",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verify request to the get journey information of invalid time works as expected",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84444
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "20220925in",
+                      "2400"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120285520
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I can see the status code is 400",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 446482
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I can see the the message \"Date is not in a valid format.  It must be in the format: yyyyMMdd\"",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 896369
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21270
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "tfl-journey-planner-request-:-disambiguation-options",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "TFL journey planner Request : disambiguation Options",
+    "tags": [],
+    "uri": "src/features/tfl-journey-planer-disambiguation.feature"
+  }
+]
