@@ -40,4 +40,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: cucumber report
-          path: /home/runner/work/test/test/reports
+          path: /home/runner/work/test/test/reports/cucumber-report.html
