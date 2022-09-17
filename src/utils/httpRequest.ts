@@ -5,6 +5,7 @@ import https from "https";
 export function httpRequest(
   requestType: "GET" | "POST",
   url: string,
+  params?: any,
   data?: any,
   postForm?: Boolean
 ): AxiosPromise<any> {
@@ -30,5 +31,6 @@ export function httpRequest(
     method: requestType,
     url,
     data,
+    params,
   });
 }

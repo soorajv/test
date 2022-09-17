@@ -1,83 +1,5 @@
 [
   {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "bank-account;stores-money",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Stores money",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 548667
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "A bank account with starting balance of $100",
-            "match": {
-              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 967420
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "$100 is deposited",
-            "match": {
-              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3533163896
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "The bank account balance should be 200",
-            "match": {
-              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 1745737,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -4\n    +6\n\n    at BankAccountSteps.accountBalanceShouldEqual (/Users/soorajvijayan/work/ambily/techtest/src/step-definitions/bank-account.steps.ts:77:15)\n    at World.bindingFunc (/Users/soorajvijayan/work/ambily/techtest/node_modules/cucumber-tsflow/src/binding-decorator.ts:181:22)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 107883
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "bank-account",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Bank Account",
-    "tags": [],
-    "uri": "src/features/bank-account.feature"
-  },
-  {
     "description": "  As a user I wants to plan my journey in London",
     "elements": [
       {
@@ -92,7 +14,31 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 92299
+              "duration": 454029
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 214192
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69674
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 65306
             }
           },
           {
@@ -122,20 +68,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 81440584
+              "duration": 195865410
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I can see the status code is 300",
+            "name": "I can see the status code is 300 for the disambiguations results",
             "match": {
               "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
             },
             "result": {
               "status": "passed",
-              "duration": 1333503
+              "duration": 610399
             }
           },
           {
@@ -143,7 +89,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 18520
+              "duration": 66150
             }
           }
         ],
@@ -152,17 +98,41 @@
       },
       {
         "description": "",
-        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-the-request-to-get-journey-information-working-fine-2",
+        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-the-request-to-get-journey-information-working-fine-for-tomorrows-date",
         "keyword": "Scenario",
         "line": 11,
-        "name": "Verify the request to get journey information working fine 2",
+        "name": "Verify the request to get journey information working fine for tomorrows date",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 78584
+              "duration": 77413
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15761
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27374
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35453
             }
           },
           {
@@ -177,7 +147,7 @@
                   },
                   {
                     "cells": [
-                      "tomorrow",
+                      "+1",
                       "0400"
                     ]
                   }
@@ -192,20 +162,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 320541157
+              "duration": 197524722
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
-            "name": "I can see the valid response body",
+            "name": "I can see the status code is 300 for the disambiguations results",
             "match": {
               "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
             },
             "result": {
               "status": "passed",
-              "duration": 770913
+              "duration": 338755
             }
           },
           {
@@ -213,7 +183,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 17030
+              "duration": 19765
             }
           }
         ],
@@ -222,17 +192,41 @@
       },
       {
         "description": "",
-        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-request-to-the-get-journey-information-of-invalid-time-works-as-expected",
+        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-the-request-to-get-journey-information-failed-for-less-than-7-date",
         "keyword": "Scenario",
         "line": 20,
-        "name": "Verify request to the get journey information of invalid time works as expected",
+        "name": "Verify the request to get journey information failed for less than 7 date",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 84444
+              "duration": 141960
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21784
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18341
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23887
             }
           },
           {
@@ -247,8 +241,8 @@
                   },
                   {
                     "cells": [
-                      "20220925in",
-                      "2400"
+                      "-8",
+                      "0400"
                     ]
                   }
                 ]
@@ -256,39 +250,39 @@
             ],
             "keyword": "Given ",
             "line": 21,
-            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"kingcrossstation/to/liverpoolstreetstation\" with following parameter",
             "match": {
               "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
             },
             "result": {
               "status": "passed",
-              "duration": 120285520
+              "duration": 87130586
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "I can see the status code is 400",
+            "name": "I can see the status code is 400 for the disambiguations results",
             "match": {
               "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
             },
             "result": {
               "status": "passed",
-              "duration": 446482
+              "duration": 274771
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "I can see the the message \"Date is not in a valid format.  It must be in the format: yyyyMMdd\"",
+            "name": "Disambiguations results message should be \"Date cannot be more than 7 days in the past.\"",
             "match": {
               "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
             },
             "result": {
               "status": "passed",
-              "duration": 896369
+              "duration": 305893
             }
           },
           {
@@ -296,7 +290,221 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 21270
+              "duration": 15900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-request-to-the-get-journey-information-of-invalid-time-works-as-expected",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Verify request to the get journey information of invalid time works as expected",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 124337
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25906
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26740
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27159
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "invalid",
+                      "2400"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87610127
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I can see the status code is 400 for the disambiguations results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 250446
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Disambiguations results message should be \"Date is not in a valid format.  It must be in the format: yyyyMMdd\"",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147321
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11922
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request-:-disambiguation-options;verify-request-to-the-get-journey-information-of-invalid-time-works-as-expected",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Verify request to the get journey information of invalid time works as expected",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 85608
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22019
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15639
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17601
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "2400"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155822363
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I can see the status code is 400 for the disambiguations results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 265425
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Disambiguations results message should be \"Time is not in a valid format.  It must be in the format: HHmm\"",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235026
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18459
             }
           }
         ],
@@ -309,6 +517,2549 @@
     "keyword": "Feature",
     "name": "TFL journey planner Request : disambiguation Options",
     "tags": [],
-    "uri": "src/features/tfl-journey-planer-disambiguation.feature"
+    "uri": "src/features/tfl-journey-planner-disambiguation.feature"
+  },
+  {
+    "description": "  As a user I wants to plan my journey in London",
+    "elements": [
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-london-boarder-:-stoppoint-ics-code-option;checking-response-code",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Checking response code",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 146143
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24550
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27553
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19726
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/luton\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 466281029
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"London, Luton Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 607227
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185106
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 921259446
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 348088
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15276
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-london-boarder-:-stoppoint-ics-code-option;checking-response-when-passing-valid-date-as-parameter-or-tomorrows-date",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Checking response when passing valid date as parameter or tomorrows date",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 120410
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21239
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17422
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19098
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/luton\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 286707502
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"London, Luton Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 238829
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190757
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "0400"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1568859351
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220704
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15311
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-london-boarder-:-stoppoint-ics-code-option;checking-success-response-when-passing-valid-date-as-parameter-or-tomorrows-date-with-mode-national-rail",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Checking success response when passing valid date as parameter or tomorrows date with mode national-rail",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 117890
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18889
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17534
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17978
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/luton\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 208827800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"London, Luton Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188482
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136685
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time",
+                      "mode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "0400",
+                      "national-rail"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1099736280
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 209985
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15042
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-london-boarder-:-stoppoint-ics-code-option;verify-request-to-the-get-journey-information-of-invalid-date-works-as-expected",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Verify request to the get journey information of invalid date works as expected",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119462
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19322
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15985
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17924
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/luton\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74930525
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"London, Luton Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221947
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180040
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "invalid"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89824990
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I can see the status code is 400 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 297300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "journey results message should be \"Date is not in a valid format.  It must be in the format: yyyyMMdd\"",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 356667
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18935
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-london-boarder-:-stoppoint-ics-code-option;checking-not-available-response-when-passing-valid-date-as-parameter-or-tomorrows-date-with-mode-tube",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Checking Not available response when passing valid date as parameter or tomorrows date with mode tube",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 157208
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19638
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16291
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18679
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/luton\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84734521
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"London, Luton Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 238564
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 199134
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time",
+                      "mode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "0400",
+                      "tube"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1304007790
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "I can see the status code is 404 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 258207
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19326
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "tfl-journey-planner-request,-with-london-boarder-:-stoppoint-ics-code-option",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "TFL journey planner Request, with London boarder : StopPoint ICS code Option",
+    "tags": [],
+    "uri": "src/features/tfl-journey-planning-london-border.feature"
+  },
+  {
+    "description": "  As a user I wants to plan my journey in London",
+    "elements": [
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-outside-london-:-stoppoint-ics-code-option;checking-response-code",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Checking response code",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 154736
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23995
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19572
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34124
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "nationalSearch",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "true",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/keighley\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 241907651
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Keighley, Keighley Rail Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244258
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185825
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1431825959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212378
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15711
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-outside-london-:-stoppoint-ics-code-option;checking-response-when-passing-valid-date-as-parameter-or-tomorrows-date",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Checking response when passing valid date as parameter or tomorrows date",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 126109
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21301
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19729
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34108
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "nationalSearch",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "true",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/keighley\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212336781
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Keighley, Keighley Rail Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213192
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133840
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "0400"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1979679322
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 256873
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18866
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-outside-london-:-stoppoint-ics-code-option;checking-success-response-when-passing-valid-date-as-parameter-or-tomorrows-date-with-mode-national-rail",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Checking success response when passing valid date as parameter or tomorrows date with mode national-rail",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 124364
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18957
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15718
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17967
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "nationalSearch",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "true",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/keighley\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 248361330
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Keighley, Keighley Rail Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 252617
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134059
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time",
+                      "mode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "0400",
+                      "national-rail"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1020710494
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254661
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18312
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-outside-london-:-stoppoint-ics-code-option;verify-request-to-the-get-journey-information-of-invalid-date-works-as-expected",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Verify request to the get journey information of invalid date works as expected",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 128633
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19192
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16216
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20331
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "nationalSearch",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "true",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/keighley\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77803328
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Keighley, Keighley Rail Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219711
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171940
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "invalid"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72558289
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I can see the status code is 400 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 248858
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "journey results message should be \"Date is not in a valid format.  It must be in the format: yyyyMMdd\"",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192556
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17657
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-outside-london-:-stoppoint-ics-code-option;checking-not-available-response-when-passing-valid-date-as-parameter-or-tomorrows-date-with-mode-tube",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Checking Not available response when passing valid date as parameter or tomorrows date with mode tube",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 155696
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24064
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19370
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22229
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "nationalSearch",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "true",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/keighley\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171452722
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Keighley, Keighley Rail Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 231155
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171409
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time",
+                      "mode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "0400",
+                      "tube"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1051580343
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "I can see the status code is 404 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 253762
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19138
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-outside-london-:-stoppoint-ics-code-option;could-not-find-the-ics-code-of-origin-and-destination-outside-london-with-out-nationalsearch-parameter",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Could not find the ICS code of origin and destination outside London with out nationalSearch parameter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 157922
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24612
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19385
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21742
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "nationalSearch",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "true",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/keighley\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58157621
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Keighley, Keighley Rail Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244269
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169914
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/keighley\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344125370
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "I can't see the ICS code of \"Keighley, Keighley Rail Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 489338
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19734
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "tfl-journey-planner-request,-outside-london-:-stoppoint-ics-code-option",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "TFL journey planner Request, outside London : StopPoint ICS code Option",
+    "tags": [],
+    "uri": "src/features/tfl-journey-planning-outside-london.feature"
+  },
+  {
+    "description": "  As a user I wants to plan my journey in London",
+    "elements": [
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-in-london-:-stoppoint-ics-code-option;checking-response-code",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Checking response code",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 134609
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24102
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16371
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19815
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 184072620
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Liverpool Street, Liverpool Street Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222521
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168770
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 671492510
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 288115
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16044
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-in-london-:-stoppoint-ics-code-option;checking-success-response-when-passing-valid-date-as-parameter-for-tomorrows-date",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Checking success response when passing valid date as parameter for tomorrows date",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 112042
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18602
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16161
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20543
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65512355
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Liverpool Street, Liverpool Street Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 253330
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170590
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "0400"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1357949203
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314595
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23289
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-in-london-:-stoppoint-ics-code-option;checking-success-response-when-passing-valid-date-as-parameter-or-tomorrows-date-with-mode-tube",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Checking success response when passing valid date as parameter or tomorrows date with mode tube",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 122702
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22724
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19087
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21969
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59890002
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Liverpool Street, Liverpool Street Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 276389
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185543
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date",
+                      "time",
+                      "mode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "+1",
+                      "0400",
+                      "tube"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 725908825
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I can see the status code is 200 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 238306
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18967
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tfl-journey-planner-request,-with-in-london-:-stoppoint-ics-code-option;verify-request-to-the-get-journey-information-of-invalid-date-works-as-expected",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Verify request to the get journey information of invalid date works as expected",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 120541
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22585
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19403
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22405
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I want to get Journey information from TFL by sending \"GET\" request to the end point \"/kingcrossstation/to/liverpoolstreetstation\" with following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235052046
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I get the ICS code of \"Liverpool Street, Liverpool Street Station\" as commonName from \"toLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 241729
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I get the ICS code of \"Kings Cross (London), King's Cross Station\" as commonName from \"fromLocationDisambiguation\" of the response body",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194684
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "date"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "invalid"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I create the journey planer request with to and from ICS code and following parameter",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79980390
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I can see the status code is 400 for the journey results",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 263899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "journey results message should be \"Date is not in a valid format.  It must be in the format: yyyyMMdd\"",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 217772
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18283
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "tfl-journey-planner-request,-with-in-london-:-stoppoint-ics-code-option",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "TFL journey planner Request, with in London : StopPoint ICS code Option",
+    "tags": [],
+    "uri": "src/features/tfl-journey-planning-within-london.feature"
+  },
+  {
+    "description": "  As a user I wants to edit wiki's online document",
+    "elements": [
+      {
+        "description": "",
+        "id": "wiki-create-the-token-and-update-an-existing-page;verify-the-wiki-document-can-be-successfully-edited-by-amending-some-test",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify the wiki document can be successfully edited by amending some test",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84478
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26787
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23263
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 28328
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I authenticate the token",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 223381612
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login successful with the valid credentials",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 621312876
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I create CSRF token",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178383489
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I can edit the wiki page of title \"Project:Sandbox\" by amending the text \"test edit1\"",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2437130003
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26268
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "wiki-create-the-token-and-update-an-existing-page;verify-the-wiki-document-can--not-be-edited-with-wrong-title",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify the wiki document can  not be edited with wrong title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 103101
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32526
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25456
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35423
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I authenticate the token",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193862831
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I login successful with the valid credentials",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 184307331
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I create CSRF token",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176671970
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I can not edit the wiki page of title \"Project:Sandbox-invalid\" by amending the text \"test edit1\"",
+            "match": {
+              "location": "node_modules/cucumber-tsflow/src/binding-decorator.ts:216"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 692035109
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22980
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "wiki-create-the-token-and-update-an-existing-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Wiki create the token and update an existing page",
+    "tags": [],
+    "uri": "src/features/wiki.feature"
   }
 ]

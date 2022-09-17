@@ -1,0 +1,41 @@
+
+Feature: TFL journey planner Request, with in London : StopPoint ICS code Option
+  As a user I wants to plan my journey in London
+
+  Background: Finding the ICS code of origin and destination
+    Given I want to get Journey information from TFL by sending "GET" request to the end point "/kingcrossstation/to/liverpoolstreetstation" with following parameter
+      |  |  |
+      |  |  |
+    And I get the ICS code of "Liverpool Street, Liverpool Street Station" as commonName from "toLocationDisambiguation" of the response body
+    And I get the ICS code of "Kings Cross (London), King's Cross Station" as commonName from "fromLocationDisambiguation" of the response body
+
+  
+  Scenario:Checking response code
+    When I create the journey planer request with to and from ICS code and following parameter
+      |  |  |
+      |  |  |
+    Then I can see the status code is 200 for the journey results
+  
+  Scenario:Checking success response when passing valid date as parameter for tomorrows date
+    When I create the journey planer request with to and from ICS code and following parameter
+      | date     | time |
+      | +1 | 0400 |
+    Then I can see the status code is 200 for the journey results
+  
+  Scenario:Checking success response when passing valid date as parameter or tomorrows date with mode tube
+    When I create the journey planer request with to and from ICS code and following parameter
+      | date     | time |  mode |
+      | +1       | 0400 |  tube |
+    Then I can see the status code is 200 for the journey results
+
+#    Negative scenarios
+
+    Scenario: Verify request to the get journey information of invalid date works as expected
+    When I create the journey planer request with to and from ICS code and following parameter
+      | date     |
+      |invalid | 
+    Then I can see the status code is 400 for the journey results
+    And journey results message should be "Date is not in a valid format.  It must be in the format: yyyyMMdd"
+    
+
+    

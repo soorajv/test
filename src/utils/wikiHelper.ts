@@ -19,7 +19,7 @@ class WikiHelper {
           }
           const data = JSON.parse(body);
 
-          resolve(data);
+          resolve(data.query.tokens.logintoken);
         }
       );
     });
@@ -41,6 +41,7 @@ class WikiHelper {
             reject(error);
           }
           const data = JSON.parse(body);
+
           if (data.login.result == "Success") {
             resolve(true);
           } else {
@@ -65,6 +66,7 @@ class WikiHelper {
             reject(error);
           }
           const data: any = JSON.parse(body);
+
           const token = data.query.tokens.csrftoken;
           if (token.length > 5) {
             resolve(token);

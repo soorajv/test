@@ -1,16 +1,26 @@
-import { binding, given, then, when } from "cucumber-tsflow";
+import { before, binding, given, then, when } from "cucumber-tsflow";
+import { expect } from "chai";
+
 import {
-  getjpdisambiguationDataData,
-  setjpdisambiguationDataData,
+  getjpdisambiguationData,
+  setjpdisambiguationData,
   IData,
 } from "../utils/data";
 import { httpRequest } from "../utils/httpRequest";
-import { expect } from "expect";
-@binding()
-export class TflJourneyPlanerDisambiguationSteps {
-  baseURL = "https://api.tfl.gov.uk/journey/journeyresults";
+import { getDateToquery } from "../utils/utilities";
+import { DataTable } from "@cucumber/cucumber";
 
-  private classIdentifier = "jpdisambiguation";
+@binding()
+export class TflJourneyPlannerDisambiguationSteps {
+  baseURL = "https://api.tfl.gov.uk/journey/journeyresults";
+  scenarionName = null;
+  scenarioId = null;
+
+  @before()
+  public beforeScenario(scenario: any): void {
+    this.scenarionName = scenario.pickle.name;
+    this.scenarioId = scenario.pickle.id;
+  }
 
   @given(
     /I want to get Journey information from TFL by sending "([^"]*)" request to the end point "([^"]*)" with following parameter/
@@ -21,48 +31,63 @@ export class TflJourneyPlanerDisambiguationSteps {
     query: any
   ) {
     let url = `${this.baseURL}/${parameter}`;
+
     const dtTable = query.hashes()[0];
-    if (dtTable.date == "tomorrow") {
-      const tomorrow = new Date();
-      tomorrow.setDate(tomorrow.getDate() + 1);
-      const dateToquery = tomorrow.toISOString().slice(0, 10).replace(/-/g, "");
-      url = `${this.baseURL}/${parameter}?date=${dateToquery}&time=${dtTable.time}`;
-    } else if (dtTable.date?.length > 0) {
-      url = `${this.baseURL}/${parameter}?date=${dtTable.date}&time=${dtTable.time}`;
+
+    if (
+      dtTable.date ||
+      dtTable.time ||
+      dtTable.mode ||
+      dtTable.nationalSearch
+    ) {
+      let params = "?";
+      const dateInfo = dtTable.date;
+
+      if (dateInfo !== undefined) {
+        const dateToquery = getDateToquery(dateInfo);
+        params += `date=${dateToquery}`;
+        params += "&";
+      }
+      if (dtTable.time) {
+        params += `time=${dtTable.time}`;
+        params += "&";
+      }
+      if (dtTable.mode) {
+        params += `mode=${dtTable.mode}`;
+        params += "&";
+      }
+      if (dtTable.nationalSearch) {
+        params += `nationalSearch=${dtTable.nationalSearch}`;
+        params += "&";
+      }
+      url = `${this.baseURL}/${parameter}${params}`;
     }
+
     const data: IData = {
       key: "",
       value: undefined,
     };
     try {
       const response = await httpRequest(httpmethod, url);
-      data.key = this.classIdentifier;
+      data.key = this.scenarioId;
       data.value = response;
-      setjpdisambiguationDataData(data);
+      setjpdisambiguationData(data);
     } catch (error: any) {
-      data.key = this.classIdentifier;
+      data.key = this.scenarioId;
       data.value = error.response;
-      setjpdisambiguationDataData(data);
+      setjpdisambiguationData(data);
     }
   }
-  @then(/I can see the status code is (\d*)/)
+  @then(/I can see the status code is (\d*) for the disambiguations results/)
   public async JourneyPlanerDisambiguationGetAssertByStatus(status: number) {
-    expect(getjpdisambiguationDataData(this.classIdentifier).status).toBe(
+    expect(getjpdisambiguationData(this.scenarioId).status).equal(
       Number(status)
     );
   }
-  @then(/I can see the valid response body/)
-  public async JourneyPlanerDisambiguationGetAssertByValidResponseBody() {
-    const response: any = getjpdisambiguationDataData(
-      this.classIdentifier
-    ).data;
-    expect(response.$type).toBeTruthy();
-  }
-  @then(/I can see the the message "([^"]*)"/)
+
+  @then(/Disambiguations results message should be "([^"]*)"/)
   public async JourneyPlanerDisambiguationInvalidMessage(message: string) {
-    const response: any = getjpdisambiguationDataData(
-      this.classIdentifier
-    ).data;
-    expect(response.message).toEqual(message);
+    const response: any = getjpdisambiguationData(this.scenarioId).data;
+    expect(response.message).equal(message);
   }
 }
