@@ -93,6 +93,6 @@ export class WikiSteps {
     const editResponse: any = await wikiHelper.editRequest(editBody);
     const data = JSON.parse(editResponse.body);
 
-    expect(data.edit.result).equal("Success");
+    expect(data.edit?.result).equal("Success");
   }
 }
